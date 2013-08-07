@@ -64,6 +64,10 @@ public class ChannelType extends BaseEntity {
 	public static final String APPSCAN_SOURCE = "IBM Rational AppScan Source Edition";
 	public static final String APPSCAN_ENTERPRISE = "IBM Rational AppScan Enterprise";
 	
+	//added by michael xin
+	public static final String PRODUCT_SECURITY_TEST = "Product Security Test";
+	
+	
 	// This set is used to hold the channel types that should include their native IDs in the vuln description.
 	// Any useful native IDs should be included here, but not ones that we generate ourselves.
 	public final static Set<String> NATIVE_ID_SCANNERS = new HashSet<>(Arrays.asList(

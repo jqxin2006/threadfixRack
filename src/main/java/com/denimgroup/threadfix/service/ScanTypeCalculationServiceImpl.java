@@ -166,6 +166,8 @@ public class ScanTypeCalculationServiceImpl implements ScanTypeCalculationServic
 		addToMap(ChannelType.APPSCAN_ENTERPRISE, "report", "control", "row");
 		addToMap(ChannelType.ZAPROXY, "report", "alertitem");
 		addToMap(ChannelType.ZAPROXY, "OWASPZAPReport", "site", "alerts");
+		addToMap(ChannelType.PRODUCT_SECURITY_TEST, "issues", "issue", "serialNumber", "type", "severity", "path", "parameter", "longDescription"); // added by Michael Xin
+		
 	}
 	
 	private static void addToMap(String name, String... tags) { 

@@ -268,6 +268,7 @@ public abstract class AbstractChannelImporter implements ChannelImporter {
 	 * @param channelSeverityCode
 	 * @return
 	 */
+	
 	protected Finding constructFinding(String url, String parameter, 
     		String channelVulnerabilityCode, String channelSeverityCode) {
     	if (channelVulnerabilityCode == null || channelVulnerabilityCode.isEmpty())

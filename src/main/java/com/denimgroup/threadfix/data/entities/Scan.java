@@ -81,10 +81,11 @@ public class Scan extends BaseEntity {
 	private Integer totalNumberFindingsMergedInScan = null;
 	
 	// These are for determining what type of scanner was used
+	// updated by Michael Xin by adding new type 
 	private static final List<String> DYNAMIC_TYPES = Arrays.asList(new String[]{ ChannelType.ACUNETIX_WVS,
 			ChannelType.APPSCAN_ENTERPRISE, ChannelType.ARACHNI, ChannelType.BURPSUITE, ChannelType.NESSUS,
 			ChannelType.NETSPARKER, ChannelType.NTO_SPIDER, ChannelType.SKIPFISH, ChannelType.W3AF,
-			ChannelType.WEBINSPECT, ChannelType.ZAPROXY, ChannelType.QUALYSGUARD_WAS, ChannelType.APPSCAN_DYNAMIC
+			ChannelType.WEBINSPECT, ChannelType.ZAPROXY, ChannelType.QUALYSGUARD_WAS, ChannelType.APPSCAN_DYNAMIC, ChannelType.PRODUCT_SECURITY_TEST
 	});
 	private static final List<String> STATIC_TYPES = Arrays.asList(new String[]{ ChannelType.APPSCAN_SOURCE,
 			ChannelType.FINDBUGS, ChannelType.FORTIFY, ChannelType.VERACODE, ChannelType.CAT_NET,

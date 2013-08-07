@@ -132,7 +132,12 @@ public class ChannelImporterFactory {
 		} else if (channelName.equals(ChannelType.APPSCAN_ENTERPRISE)){
 			channelImporter = new AppScanEnterpriseChannelImporter(channelTypeDao, 
 					channelVulnerabilityDao, channelSeverityDao);
-		} else {
+		}
+		 else if (channelName.equals(ChannelType.PRODUCT_SECURITY_TEST)){ // added by Michael Xin
+				channelImporter = new ProductSecurityTestChannelImporter(channelTypeDao, 
+						channelVulnerabilityDao, channelSeverityDao);
+		 }
+		else {
 			return null;
 		}
 		

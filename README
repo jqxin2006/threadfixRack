@@ -34,3 +34,11 @@ If you are interested in commercial support for ThreadFix, or help getting
 your rollout up and running, please contact Denim Group:
 http://www.denimgroup.com/threadfix
 
+
+The goal of this project to leverage ThreadFix to meet our team's needs. Here are the changes that we are making:
+
+1) Add longDescription into the finding detail page.
+2) Change the maximum length of longDescription from 2047 to 2047000
+3) Update form.jsp for longDescription to be 20 rows and 100 cols to better input purpose. 
+
+
