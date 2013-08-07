@@ -66,6 +66,7 @@ public class ChannelType extends BaseEntity {
 	
 	//added by michael xin
 	public static final String PRODUCT_SECURITY_TEST = "Product Security Test";
+	public static final String NESSUS_SCAN = "Nessus Scan";
 	
 	
 	// This set is used to hold the channel types that should include their native IDs in the vuln description.

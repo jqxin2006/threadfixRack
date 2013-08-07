@@ -137,7 +137,12 @@ public class ChannelImporterFactory {
 				channelImporter = new ProductSecurityTestChannelImporter(channelTypeDao, 
 						channelVulnerabilityDao, channelSeverityDao);
 		 }
-		else {
+		 else if (channelName.equals(ChannelType.NESSUS_SCAN)){ // added by Michael Xin
+				channelImporter = new NessusScanChannelImporter(channelTypeDao, 
+						channelVulnerabilityDao, channelSeverityDao);
+		 }
+		
+		 else {
 			return null;
 		}
 		
