@@ -982,15 +982,16 @@ public class ScanMergeServiceImpl implements ScanMergeService {
 			if (!scanHash.containsKey(nativeId)
 					&& oldNativeIdVulnHash.get(nativeId) != null
 					&& oldNativeIdVulnHash.get(nativeId).isActive()) {
-				if (scan.getImportTime() != null)
-					oldNativeIdVulnHash.get(nativeId).closeVulnerability(scan,
-							scan.getImportTime());
-				else
-					oldNativeIdVulnHash.get(nativeId).closeVulnerability(scan,
-							Calendar.getInstance());
-				vulnerabilityDao
-						.saveOrUpdate(oldNativeIdVulnHash.get(nativeId));
-				closed += 1;
+				//if (scan.getImportTime() != null)
+					//oldNativeIdVulnHash.get(nativeId).closeVulnerability(scan,
+						//	scan.getImportTime());
+				//else
+					//oldNativeIdVulnHash.get(nativeId).closeVulnerability(scan,
+							//Calendar.getInstance());
+				//vulnerabilityDao
+					//	.saveOrUpdate(oldNativeIdVulnHash.get(nativeId));
+				//closed += 1;
+				// commented by Michael Xin, do not want to close old vulnerabilities. 
 			}
 		}
 
