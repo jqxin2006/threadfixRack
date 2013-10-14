@@ -16,13 +16,13 @@
 			</div>
 		</c:if>
 		<div style="display:none" id="lengthError${ vulnerability.id }" class="alert alert-error hide-after-submit">
-			Maximum length is 200 characters.
+			Maximum length is 20000 characters.
 		</div>
 		Comment:
 		<textarea style="margin:10px;width: 497px; height: 215px;" 
 			class="textbox clear-after-submit" 
 			id="commentInputBox"
-			data-max-length="200"
+			data-max-length="20000"
 			data-error="lengthError${ vulnerability.id }"
 			name="comments"></textarea>
 	</div>

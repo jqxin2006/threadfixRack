@@ -28,5 +28,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/jian5397/Downloads/spring-jdbc-1.2.jar"/>
 	<classpathentry kind="lib" path="/Users/jian5397/Downloads/spring-security-core-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/jian5397/research/v1/VersionOne.SDK.Java.APIClient-12.3.3.138.jar"/>
+	<classpathentry kind="lib" path="/Users/jian5397/research/v1/VersionOne.SDK.Java.ObjectModel-12.1.0.150.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
